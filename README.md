@@ -1,2 +1,3 @@
 # talks
-Source code from public talks (very incomplete)
+
+Source code and links to video recordings, write ups etc, from public talks (very incomplete).
