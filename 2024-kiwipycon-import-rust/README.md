@@ -2,7 +2,12 @@
 
 An introduction to the confusing concepts of Rust for Python developers.
 
-## description
+## References
+
+- [Conf deep link](https://talks.kiwipycon.nz/kiwi-pycon-2024/talk/8WN3FK/)
+- [Wayback Machine link in case of link rot](https://web.archive.org/web/20240827210530/https://talks.kiwipycon.nz/kiwi-pycon-2024/talk/8WN3FK/)
+
+## Description
 
 An informative guide to using the Rust programming language to support Python projects. This talk has two aims. Its first is to demystify Rust and show you a subset of the language that's far less intimidating that you may have been lead to believe. The second is to guide you through a set of decision criteria for considering supplementing your Python project with the language.
 Motivation
