@@ -1,0 +1,32 @@
+[workspace]
+members = [
+    #"example-scan-ints", # TODO: fix
+    "example-verified-circular-buffer",
+    "example-verified-multiplication",
+]
+resolver = "2"
+
+[profile.release]
+overflow-checks = true
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Tim McNamara <tim@accelerant.dev>"]
+edition = "2021"
+description = "Examples from the RUSTLAB 2024 talk Safer Software"
+
+[workspace.dependencies]
+fastrand = "2"
+
+[workspace.metadata.kani]
+# Enable experimental Kani features if needed
+flags = "--enable-unstable "
+
+# Default loop unwinding depth
+default-unwind = 10
+
+# Enable all default checks
+default-checks = true
+
+# Choose the SAT solver (options: kissat, bitwuzla)
+solver = "kissat"

@@ -1,0 +1,8 @@
+[package]
+name = "scan-ints"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[dependencies]
+num = "0.4"

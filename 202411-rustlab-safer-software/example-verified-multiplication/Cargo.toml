@@ -1,0 +1,10 @@
+[package]
+name = "multiply"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[dependencies]
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }

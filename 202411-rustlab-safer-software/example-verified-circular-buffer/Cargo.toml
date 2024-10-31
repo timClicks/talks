@@ -1,0 +1,10 @@
+[package]
+name = "circbuf"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(kani)'] }
+
+# note: kani config is provided in the workspace root
