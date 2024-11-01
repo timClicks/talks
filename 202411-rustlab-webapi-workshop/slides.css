@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.sidebar {
+    font-size: small;
+}
+
+/* Style each slide section */
+section.slide {
+    /* Full viewport height */
+    height: 100vh;
+    /* Ensure each slide starts at the top of its viewport section */
+    margin: 0;
+    padding: 2rem;
+    /* Prevent content overflow */
+    /* overflow: hidden; */
+    /* Enable proper scroll snapping */
+    scroll-snap-align: start;
+    /* Box sizing to include padding in height calculation */
+    box-sizing: border-box;
+    /* Center content within slide */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media print {
+    :root {
+        font-size: 12pt;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    section.slide {
+        height: auto;
+        margin: 0;
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
