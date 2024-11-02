@@ -14,7 +14,7 @@ window.editors = [];
             showPrintMargin: false,
             showLineNumbers: display_line_numbers,
             showGutter: display_line_numbers,
-            fontSize: "0.675em" // please adjust the font size of the code in general.css
+            fontSize: "0.4em" // please adjust the font size of the code in general.css
         });
 
         // editor.$blockScrolling = Infinity;
