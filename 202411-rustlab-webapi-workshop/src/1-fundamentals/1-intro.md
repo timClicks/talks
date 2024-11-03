@@ -15,3 +15,5 @@ fn main() {
 ```
 
 </section>
+
+<!-- [output.html.playground] -->

@@ -19,7 +19,7 @@ function playground_text(playground, hidden = true) {
             enableLiveAutocompletion: true,
         })
 
-        editor.setTheme("ace/theme/ayu");
+        // editor.setTheme("ace/theme/ayu");
         return editor.getValue();
     } else if (hidden) {
         return code_block.textContent;
@@ -38,7 +38,9 @@ function playground_text(playground, hidden = true) {
 
     var playgrounds = Array.from(document.querySelectorAll(".playground"));
     if (playgrounds.length > 0) {
-        fetch_with_timeout("https://play.rust-lang.org/meta/crates", {
+        // TODO: avoid hardcoding
+        //fetch_with_timeout("https://play.rust-lang.org/meta/crates", {
+        fetch_with_timeout("http://localhost:5000/meta/crates", {
             headers: {
                 'Content-Type': "application/json",
             },
@@ -140,12 +142,14 @@ function playground_text(playground, hidden = true) {
 
         result_block.innerText = "Running...";
 
-        fetch_with_timeout("https://play.rust-lang.org/evaluate.json", {
+        // TODO: avoid hard coding
+        //fetch_with_timeout("https://play.rust-lang.org/evaluate.json", {
+        fetch_with_timeout("http://localhost:5000/evaluate.json", {
             headers: {
                 'Content-Type': "application/json",
             },
             method: 'POST',
-            mode: 'cors',
+            // mode: 'cors',
             body: JSON.stringify(params)
         })
         .then(response => response.json())
@@ -158,7 +162,7 @@ function playground_text(playground, hidden = true) {
                 result_block.classList.remove("result-no-output");
             }
         })
-        .catch(error => result_block.innerText = "Playground Communication: " + error.message);
+        .catch(error => result_block.innerText = "Error communicating with playground: \n\n" + error.message);
     }
 
     // Syntax highlighting Configuration

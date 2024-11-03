@@ -74,12 +74,21 @@ fn recaman(n: usize) -> i32 {
 [[playground link]](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=37c5ed2da968d6921cbd1dd2be06e82c)
 
 
-    Find and show here, the first duplicated number in the sequence.
-    Optionally: Find and show here, how many terms of the sequence are needed until all the integers 0..1000, inclusive, are generated.
+# Task 2:
+
+Find the first duplicated number in the sequence.
+
+
+# Task 3:
+
+Find and show here, how many terms of the sequence are needed until all the integers `0..=100`, inclusive, are generated.
 
 
 </section>
 <section class="slide">
+
+## Acknowledgement
+
 </section>
 <section class="slide">
 
