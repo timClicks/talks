@@ -39,12 +39,22 @@ fn main() {
 <span class="fragment">That format string takes a few forms, and is very powerful.</span>
 <span class="fragment">But it does have limitations.</span>
 
+</section>
+
+<section class="slide">
+
+Arguments to `println!` can be provided as a  u can define your own named arguments:
+
+```rust
+let a = 12345;
+println!("{}", a)
+```
 
 </section>
 
 <section class="slide">
 
-You can define your own named arguments multiple times:
+You can define your own named arguments:
 
 ```rust
 fn main() {
@@ -52,8 +62,6 @@ fn main() {
     println!("{number}", number=a)
 }
 ```
-
-<span class="fragment">Note: this is uncommon</span>
 
 </section>
 
@@ -65,6 +73,20 @@ You can use arguments multiple times:
 fn main() {
     let a = 12345;
     println!("{number} - {number} = 0", number = a)
+}
+```
+
+</section>
+
+<section class="slide">
+
+To pretty-print values, use `{_:#?}`, replacing `_` with the value you're interested in.
+
+
+```rust
+fn main() {
+    let a = ([1, 2, 3, 4, 5], 0.1, [0.2, 0.3]);
+    println!("{a:#?}")
 }
 ```
 

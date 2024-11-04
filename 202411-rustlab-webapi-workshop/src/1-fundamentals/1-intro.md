@@ -1,5 +1,8 @@
+<section class="slide">
+
 # Fundamentals
 
+</section>
 <section class="slide">
 
 In this module, we'll learn just enough of Rust to do make something meaningful.
@@ -15,5 +18,3 @@ fn main() {
 ```
 
 </section>
-
-<!-- [output.html.playground] -->

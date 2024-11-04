@@ -15,31 +15,7 @@ tips for working with them
 
 </section><section class="slide">
 
-## Lists
-
-</section><section class="slide">
-
-```rust,editable
-fn main() {
-
-}
-
-// vec![]
-// Vec::new()
-// Vec::with_capacity()
-
-// - info: must be same type , e.g. Vec<T>
-// - show: how to add an item
-// - show: how to remove an item
-// - show: how to select an item by index
-// - show: how to select an item with get (mention Option<T>)
-// - show: how to sort
-```
-
-</section>
-
 <section class="slide">
-
 
 ```rust,editable
 fn recaman(n: usize) -> i32 {
@@ -63,6 +39,7 @@ fn recaman(n: usize) -> i32 {
     sequence[n]
 }
 ```
+
 </section>
 <section class="slide">
 

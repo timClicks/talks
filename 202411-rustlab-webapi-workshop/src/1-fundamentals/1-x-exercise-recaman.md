@@ -1,4 +1,8 @@
-# Exercise: Recamán Sequence
+<section class="slide">
+
+# Exercise: Recamán's Sequence
+
+</section>
 
 <section class="slide">
 

@@ -1,15 +1,18 @@
+<section class="slide">
+
 # Welcome
+
+</section>
 
 <section class="slide">
 
 ```rust,editable
 fn main() {
-    println!("hello");
+    println!("Ciao!");
 }
 ```
 
 </section>
-
 
 <section class="slide">
 
