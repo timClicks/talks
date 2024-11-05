@@ -1,8 +1,11 @@
-# Unit type
-
 <section class="slide">
 
-## Functions without an explicit return type return "unit" (`()`)
+# Unit type
+
+</section>
+<section class="slide">
+
+## Functions without an explicit return type return `()` ("unit")
 
 </section>
 
@@ -11,6 +14,7 @@
 ```rust, editable
 // main returns (), not an integer
 fn main() -> () {
+    println!("error code not required");
 }
 ```
 
@@ -18,10 +22,14 @@ fn main() -> () {
 
 <section class="slide">
 
-## Expressions ~~Functions~~ without an explicit return type return "unit" (`()`)
+## Expressions terminated with a semi-colon (`;`) return `()`
 
-
-```rust
+```rust,editable
+fn main() -> () {
+    let answer = {
+        1 + 2
+    };
+}
 ```
 
 </section>

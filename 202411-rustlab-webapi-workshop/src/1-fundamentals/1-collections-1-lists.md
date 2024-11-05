@@ -28,10 +28,6 @@ fn main() {
 }
 ```
 
-<details>
-Hello there.
-</details>
-
 </section>
 
 

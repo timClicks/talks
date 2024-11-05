@@ -46,46 +46,26 @@ n_{i-1} + i & \text{otherwise} \\\\
 <section class="slide">
 
 ```rust,editable
-fn recaman(n: usize) -> i32 {
-    let mut used = std::collections::HashSet::new();
-    used.insert(0);
-    let mut prev = 0;
-
-    for i in 1..=n {
-        let next = prev - i as i32;
-
-        if next > 0 && !used.contains(&next) {
-            prev = next;
-        } else {
-            prev = prev + i as i32;
-        }
-        used.insert(prev);
-    }
-    prev
-}
-#
-# fn main() {
-#    println!("{}", recaman(10));
-# }
+{{ #include exercises/recaman/src/main.rs }}
 ```
+
+[[playground link]](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=37c5ed2da968d6921cbd1dd2be06e82c)
 
 </section>
 
 <section class="slide">
 
-## Task 1: Generate and print the first 15 members of the sequence
+## Task 1
 
-[[playground link]](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=37c5ed2da968d6921cbd1dd2be06e82c)
+Generate and print the first 15 members of the sequence
 
-
-# Task 2:
+# Task 2
 
 Find the first duplicated number in the sequence.
 
+# Task 3
 
-# Task 3:
-
-Find and show here, how many terms of the sequence are needed until all the integers `0..=100`, inclusive, are generated.
+Find how many terms of the sequence are needed until all the integers from 0 to 100, inclusive, are generated.
 
 
 </section>
@@ -93,7 +73,5 @@ Find and show here, how many terms of the sequence are needed until all the inte
 
 ## Acknowledgement
 
-</section>
-<section class="slide">
-
+ - https://rosettacode.org/wiki/Recaman%27s_sequence
 </section>

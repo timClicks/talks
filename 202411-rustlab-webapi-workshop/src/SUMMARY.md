@@ -4,6 +4,7 @@
 
 - [Fundamentals](./1-fundamentals/1-intro.md)
   - [Numbers](./1-fundamentals/1-numbers.md)
+  - [Variables and mutability](./1-fundamentals/variables.md)
   - [Traits](./1-fundamentals/1-traits.md)
   - [Operators](./1-fundamentals/1-operators.md)
   - [Control Flow](./1-fundamentals/1-contol-flow-0-intro.md)
@@ -19,10 +20,12 @@
     - [Sets](./1-fundamentals/1-collections-2-sets.md)
     - [Maps](./1-fundamentals/1-collections-3-maps.md)
   - [Iteration](./1-fundamentals/1-iteration.md)
-  - [Exercise: Recamán Sequence](./1-fundamentals/1-x-exercise-recaman.md)
+  - [Exercise: Recamán's Sequence](./1-fundamentals/1-x-exercise-recaman.md)
+  - [Exercise: Implement ArrayMap](./1-fundamentals/x-implement-arraymap.md)
 
 - [Command-line apps](./2-command-line/0-intro.md)
   - [Exercise: Select Greatest](./2-command-line/2-x-greatest.md)
+  - [Exercise: Select Greatest](./2-command-line/2-thumbnail.md)
   - [Project structure](./2-command-line/1-project-structure.md)
   - [Working with dependencies](./2-command-line/working-with-dependencies.md)
   - [Rust tools](./2-command-line/1-tools.md)

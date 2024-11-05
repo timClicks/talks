@@ -80,8 +80,7 @@ fn main() {
 
 <section class="slide">
 
-To pretty-print values, use `{_:#?}`, replacing `_` with the value you're interested in.
-
+To pretty-print values, use `{_:#?}`, replacing `_` with the value you're interested in:
 
 ```rust
 fn main() {
@@ -91,4 +90,3 @@ fn main() {
 ```
 
 </section>
-

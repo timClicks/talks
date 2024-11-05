@@ -8,7 +8,7 @@
 
 ```rust,editable
 fn main() {
-    println!("Ciao!");
+    println!("Ciao, 🇮🇹!");
 }
 ```
 
@@ -38,7 +38,16 @@ Hi, I'm Tim.
 
 Local browser.
 
-GitHub.
+</section>
+<section class="slide">
+
+## Principles that we will learn
+
+Rust prefers:
+
+- strongly-typed data types
+- precision
+- explicitness
 
 </section>
 <section class="slide">
@@ -55,7 +64,7 @@ $ mdbook serve --open
 
 ### Running the code
 
-Dev Containers.
+<!-- Dev Containers. -->
 
 ```shell
 cargo run
@@ -63,6 +72,7 @@ cargo run
 
 </section>
 
+<!--
 <section>
 
 ## How the course will run
@@ -81,3 +91,4 @@ Within each module, we'll follow this broad structure:
 - Practice
 
 </section>
+-->

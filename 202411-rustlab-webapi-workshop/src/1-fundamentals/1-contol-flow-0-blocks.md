@@ -1,5 +1,8 @@
+<section class="slide">
+
 # Blocks
 
+</section>
 
 <section class="slide">
 

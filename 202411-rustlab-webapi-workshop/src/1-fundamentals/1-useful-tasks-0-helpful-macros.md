@@ -17,3 +17,17 @@ fn main() {
 ```
 
 </section>
+
+<section class="slide">
+
+## dbg!()
+
+Provides a detailed view of an expression:
+
+```rust
+fn main() {
+    dbg!(1 + 1);
+}
+```
+
+</section>

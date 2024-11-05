@@ -9,7 +9,7 @@ In this module, we'll learn just enough of Rust to do make something meaningful.
 
 </section>
 
-<section class="slide">
+<!-- <section class="slide">
 
 ```rust,editable
 fn main() {
@@ -17,4 +17,4 @@ fn main() {
 }
 ```
 
-</section>
+</section> -->
