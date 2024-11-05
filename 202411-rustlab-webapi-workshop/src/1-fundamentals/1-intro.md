@@ -6,6 +6,7 @@
 <section class="slide">
 
 In this module, we'll learn just enough of Rust to do make something meaningful.
+We'll have a suite of types that will enable us to build programs.
 
 </section>
 

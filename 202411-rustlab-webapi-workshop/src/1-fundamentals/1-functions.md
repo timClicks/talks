@@ -8,8 +8,8 @@
 Functions in Rust come in three general forms.
 
 - free functions
-- static methods
 - methods
+- static methods
 
 Other callable
 
@@ -51,22 +51,9 @@ fn main() {
 
 ## Methods
 
-- free functions
-- static methods
-- methods
-
-Other callable
-
-- closures
-
 ```rust,editable
-"fir
-<section class="slide">enze".to_uppercase(
-
-)
+"firenze".to_uppercase()
 ```
-<section class="slide">
-
 
 </section>
 <section class="slide">
@@ -76,7 +63,7 @@ For reasons that we'll see later, it's normally seen as `&self` and `&mut self`.
 The forms indicate the intended access pattern, but the details not essential at this point.
 
 - Read only: `&self`
--
+- Read/write: `&mut self` and `self`
 
 <!--
 
@@ -89,6 +76,7 @@ It can have
 
 </section>
 
+<!--
 <section class="slide">
 
 Functions are related to a series of traits:
@@ -99,3 +87,4 @@ Functions are related to a series of traits:
 </ul>
 
 </section>
+-->

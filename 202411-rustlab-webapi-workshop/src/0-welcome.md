@@ -71,11 +71,36 @@ cargo run
 ```
 
 </section>
-
-<!--
-<section>
+<section class="slide">
 
 ## How the course will run
+
+We don't have enough time to learn all of Rust.
+Instead we will focus on giving you a core of knowledge that will enable you to expand over time.
+We'll also try to use spaced repetition when discussing a complex topic.
+Rather than trying to learn the whole concept in one block,
+we'll learn part of it and expand upon that over time.
+
+</section>
+<section class="slide">
+
+## Focus areas
+
+Day 1
+
+- mechanics of the language
+- creating working programs
+
+Day 2
+
+- references
+- memory management
+- ownership
+
+
+</section>
+
+<!--
 
 4 modules
 

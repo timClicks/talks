@@ -15,7 +15,6 @@ Traits are essential to almost all behaviour of a data type in Rust.
 
 ## Examples
 
-
 <div class="fragment">
 
 <ul class="fragment">
@@ -27,3 +26,8 @@ Traits are essential to almost all behaviour of a data type in Rust.
 </div>
 
 </section>
+
+<!-- <section class="slide">
+
+## Implementing a
+</section> -->
