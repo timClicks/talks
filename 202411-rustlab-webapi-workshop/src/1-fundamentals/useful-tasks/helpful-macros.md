@@ -31,3 +31,17 @@ fn main() {
 ```
 
 </section>
+
+<section class="slide">
+
+## eprintln!()
+
+Prints to stderr, rather than stdout:
+
+```rust
+fn main() {
+    eprintln!("warning: this program is too short");
+}
+```
+
+</section>
