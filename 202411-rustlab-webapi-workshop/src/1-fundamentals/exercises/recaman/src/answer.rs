@@ -46,8 +46,11 @@ fn recaman_find_first_duplicate() -> (usize, i32) {
     (0, 0)
 }
 
-fn recaman_find_first_100() -> (usize, i32) {
-    let mut need = HashSet::new()
+fn recaman_find_first_100() -> usize {
+    let mut need: HashSet<i32> = HashSet::new();
+    for n in 1..=100 {
+        need.insert(n);
+    }
     let mut seen = HashSet::new();
     seen.insert(0);
     let mut prev = 0;
@@ -61,14 +64,14 @@ fn recaman_find_first_100() -> (usize, i32) {
             prev = prev + i as i32;
         }
 
-        if seen.contains(&prev) {
-            return (i, prev);
-        }
-
         seen.insert(prev);
+        let _ = need.remove(&prev);
+        if need.is_empty() {
+            return i;
+        }
     }
 
-    (0, 0)
+    0
 }
 
 fn main() {
@@ -77,4 +80,7 @@ fn main() {
 
     //Task 2
     println!("{:?}", recaman_find_first_duplicate());
+
+    //Task 3
+    println!("{:?}", recaman_find_first_100());
 }

@@ -21,6 +21,7 @@ Other callable
 
 ## Free functions
 
+</section>
 <section class="slide">
 
 ```rust,editable

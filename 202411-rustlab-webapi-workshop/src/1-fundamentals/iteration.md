@@ -98,7 +98,52 @@ fn main() {
 
 ## Higher-order functions
 
+</section>
+<section class="slide">
+
 Rust uses higher-order programming extensively.
+All iterators---types which implement the `Iterator` trait---have access
+to [several methods][] which perform operations on the contents.
+
+```rust,editable
+fn main() {
+    let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    let squared = items.into_iter()
+        .filter(|x| x % 2 == 0)
+        .map(|x| x * x)
+        .enumerate();
+
+    for (i, item) in squared {
+        println!("{i}: {item}");
+    }
+}
+```
+
+[several methods]: https://doc.rust-lang.org/std/iter/trait.Iterator.html
 
 </section>
+<section class="slide">
 
+## Important method: collect
+
+`.collect()` pulls items an iterator into a collection.
+It takes a type parameter via the so-called "turbofish" syntax `::<>`.
+
+```rust,editable
+fn main() {
+    let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    let squared = items.into_iter()
+        .filter(|x| x % 2 == 0)
+        .map(|x| x * x)
+        .enumerate()
+        .collect(); // TODO: fix compile error
+
+    for (i, item) in squared {
+        println!("{i}: {item}");
+    }
+}
+```
+
+</section>

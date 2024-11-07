@@ -5,3 +5,7 @@ edition = "2021"
 
 [dependencies]
 image = "*"
+
+# $ cargo new thumbnail
+# $ cd thumbnail
+# $ cargo add image
