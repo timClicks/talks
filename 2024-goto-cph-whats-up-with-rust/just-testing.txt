@@ -1,0 +1,30 @@
+---
+title: What's up with Rust?
+author: Tim McNamara <hello@timclicks.dev>
+date: 2nd October 2024
+---
+
+## Stories
+
+### Once upon a time
+
+- Google had a C++ problem
+- Now it has two problems
+
+## Checking code
+
+```rust
+fn main() {
+	let hello = "world";
+}
+```
+
+## Rust philosophy
+
+Vs other
+
+C          Rust
+
+ENOENT     FileSystemError::NoEntry
+
+

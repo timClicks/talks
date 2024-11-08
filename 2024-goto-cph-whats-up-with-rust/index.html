@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>What's up with Rust? GOTO Copenhagen 2024</title>
+		<meta name="author" content="Tim McNamara">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+
+		<link rel="stylesheet" href="revealjs/dist/reset.css">
+		<link rel="stylesheet" href="revealjs/dist/reveal.css">
+		<link rel="stylesheet" href="revealjs/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>What's up with Rust?</h1>
+					<h2>Tim McNamara</h2>
+					<h2>GOTO Copenhagen</h2>
+				</section>
+
+				<section>Slide 2</section>
+
+				<section>
+					<section><h1>Rust's philosophy</h1></section>
+
+					<section>
+						<p>In C, an error from the file system might look
+						something like this:
+						</p>
+
+						<code data-language="C">ENOENT</code>
+					</section>
+					<section>
+						<p>In Rust, a more verbose style is preferred. </p>
+
+						<code>FileSystemError::NoEntry</code>
+
+						<p>This style is actually richer than C's. Although it
+						will also use integers, Rust will also provide guidance.
+						 enums provide a </p>
+					</section>
+
+
+				</section>
+
+
+
+
+			</div>
+		</div>
+
+		<script src="revealjs/dist/reveal.js"></script>
+		<script src="revealjs/plugin/notes/notes.js"></script>
+		<script src="revealjs/plugin/markdown/markdown.js"></script>
+		<script src="revealjs/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
