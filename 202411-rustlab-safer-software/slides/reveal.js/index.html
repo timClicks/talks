@@ -1,29 +1,129 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Safer Software - RUSTLAB 2024</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/timclicks.css">
+	<title>Safer Software - RUSTLAB 2024</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/zenburn.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/timclicks.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/zenburn.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Strong&nbsp;software for a safer&nbsp;future</h1>
+			</section>
+
+			<section>
+				<div class="r-stack">
+					<img class="fragment" src="assets/94634FF3-9E2A-4B88-A145-DB625DFE343E.jpeg" height="600" />
+					<img class="fragment" src="assets/PXL_20241028_045907883.jpg" height="600" />
+					<img class="fragment" src="assets/PXL_20241027_211422080.jpg" height="600" />
+					<img class="fragment" src="assets/79545EBF-9B92-4E9D-ABCB-0BB1B877F7C8.jpeg" height="600" />
+				</div>
+			</section>
+
+			<section>
 				<section>
-					<section data-background="assets/lock-out-tags.png">&nbsp;</section>
+					<h2>Things software could be</h2>
+					<ul>
+						<li class="fragment fade-right">Reliable</li>
+						<li class="fragment fade-right">Secure</li>
+						<li class="fragment fade-right">Efficient</li>
+					</ul>
 				</section>
+			</section>
+
+			<section>
+				<section>A better future<span class="fragment fade-out">?</span></section>
+
+				<section>What is wrong with this code?</section>
+				<section>
+					<pre style="margin-bottom: 0;"><code data-noescape>
+	fn multiply(a: i32, b: i32) -> i32 {
+		a * b
+	}
+						</code></pre>
+
+
+					<pre style="margin-top: 0;" class="fragment"><code data-noescape="">
+	fn main() {
+		let _ = multiply(i32::MAX, 10);
+	}
+	</code></pre>
+
+					<pre style="background-color: #333333; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;"
+						class="fragment">
+  cargo run
+</pre>
+					<pre style="background-color: rgb(106, 56, 56); margin-top: 0; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;"
+						class="fragment">
+  thread 'main' panicked at src/main.rs:4:5:
+  attempt to multiply with overflow
+	</pre>
+
+
+			</section>
+
+			<section>
+				<p>How do other industries work?</p>
+			</section>
+
+			<section>
+				<div class="r-stack">
+					<img class="fragment" src="assets/Fiat_Lingotto_veduta-1928.jpg">
+					<img class="fragment" src="assets/racetrack-rooftop-factory-italy (6).jpg"
+						style="position: absolute; left: -200px; top: 50px;" height="500" />
+					<img class="fragment" src="assets/racetrack-rooftop-factory-italy (5).jpg"
+						style="position: absolute; left: 150px; top: 50px;" height="500" />
+					<img class="fragment" src="assets/racetrack-rooftop-factory-italy (4).jpg" height="500"
+						style="position: absolute; left: 400px; top: 50px;" />
+				</div>
+				<p>Fiat Lingotto Factory (1928)</p>
+
+				<aside class="notes">
+					Shhh, these are your private notes 📝
+				  </aside>
+			</section>
+
+				<section>
+					<section data-background-size="500px" data-background-opacity="0.7"
+						data-background-image="assets/lock-out-tags.png">&nbsp;</section>
+				</section>
+			</section>
+
+				<section>
+					<section>
+						<h2>
+							If software analysis tools are so good, then why does nobody use them?
+						</h2>
+					</section>
+					<section>
+						We're busy.<span class="fragment"> And everything is on fire.</span>
+					</section>
+					<section>
+						Software is difficult to measure.<span class="fragment"> And prevention is extremely difficult
+							to measure.</span>
+					</section>
+					<section>
+						Learning a new tool takes time.
+						<span class="fragment"> And its benefits may take a long time to appear, </span>
+						<span class="fragment">if they ever do.</span>
+					</section>
+				</section>
+
 				<section>
 					<section>A better future<span class="fragment fade-out">?</span></section>
-					
-					<section>What is wrong with this code?</section>
+
+					<section>What is wrong with this code? (again)</section>
 					<section>
 						<pre style="margin-bottom: 0;"><code data-noescape>
 	fn multiply(a: i32, b: i32) -> i32 {
@@ -32,17 +132,19 @@
 						</code></pre>
 
 
-	<pre style="margin-top: 0;" class="fragment"><code data-noescape="">
+						<pre style="margin-top: 0;" class="fragment"><code data-noescape="">
 	fn main() {
 		let _ = multiply(i32::MAX, 10);
 	}
 	</code></pre>
 
-	<pre style="background-color: #333333; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;" class="fragment">
+						<pre style="background-color: #333333; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;"
+							class="fragment">
   cargo run
 </pre>
-	<pre style="background-color: rgb(106, 56, 56); margin-top: 0; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;" class="fragment">
-  thread 'main' panicked at example-verified-multiplication/src/main.rs:4:5:
+						<pre style="background-color: rgb(106, 56, 56); margin-top: 0; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;"
+							class="fragment">
+  thread 'main' panicked at src/main.rs:4:5:
   attempt to multiply with overflow
 	</pre>
 
@@ -52,57 +154,83 @@
 	#[cfg(kani)]
 	mod verification {
 		use crate::multiply;
-	
+
 		#[kani::proof]
 		fn verify_can_multiply() {
 			let a: i32 = kani::any();
 			let b: i32 = kani::any();
-	
+
 			let _ = multiply(a, b);
 		}
 	}
 						</code></pre>
 					</section>
 					<section>
-<pre style="background-color: #333333; margin-top: 0; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;" class="fragment">
+						<pre style="background-color: #333333; margin-top: 0; margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;"
+							class="fragment">
   cargo kani
 </pre>
 
-<pre style="background-color: #333333; margin-top: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;" class="fragment">
+						<pre style="background-color: #333333; margin-top: 0; padding-top: 1rem; padding-bottom: 1rem; overflow:hidden;"
+							class="fragment">
   Kani Rust Verifier 0.56.0 (cargo plugin)
   ...
-  
+
   RESULTS:
   Check 1: multiply.assertion.1
    - Status: FAILURE
    - Description: "attempt to multiply with overflow"
    - Location: example-verified-multiplication/src/main.rs:4:5 in function multiply
-  
+
   ...
 </pre>
 					</section>
 
 
 				</section>
-			</div>
+
+				<section>
+					<section>An old saying in the Rust community:</section>
+					<section>
+						<h2>Fearless concurrency</h2>
+					</section>
+					<section>A new one to consider:</section>
+					<section>
+						<h2>Fearless programming</h2>
+					</section>
+				</section>
+
+				<section>
+					tim@accelerant.dev
+				</section>
+
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				history: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			history: true,
+			// controlsLayout: 'edges',
+			// transitionSpeed: "fast",
+			hideCursorTime: 400,
+			// controlsTutorial: false,
+			controls: false,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom ]
-			});
-		</script>
-	</body>
+			// disableLayout: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+		});
+	</script>
+</body>
+
 </html>

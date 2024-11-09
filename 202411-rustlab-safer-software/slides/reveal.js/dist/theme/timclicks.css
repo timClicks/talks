@@ -11,23 +11,23 @@
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: #002b36;
+  --r-background-color: #04151a;
   --r-main-font: Inter, Lato, sans-serif;
   --r-main-font-size: 40px;
   --r-main-color: #eee8d5;
   --r-block-margin: 3rem;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: Inter, League Gothic, Impact, sans-serif;
-  --r-heading-color: #93a1a1;
-  --r-heading-line-height: 1.2;
+  --r-heading-color: #cfe0e0;
+  --r-heading-line-height: 1.12;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
   --r-heading-text-shadow: none;
-  --r-heading-font-weight: normal;
+  --r-heading-font-weight: 600;
   --r-heading1-text-shadow: none;
-  --r-heading1-size: 3.77em;
-  --r-heading2-size: 2.11em;
-  --r-heading3-size: 1.55em;
+  --r-heading1-size: 2.077em;
+  --r-heading2-size: 1.91em;
+  --r-heading3-size: 1.35em;
   --r-heading4-size: 1em;
   --r-code-font: Input Mono, monospace;
   --r-link-color: #268bd2;
