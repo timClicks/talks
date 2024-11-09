@@ -49,7 +49,7 @@ impl ItalianCities {
 }
 
 fn load_data() -> Result<ItalianCities, Box<dyn std::error::Error>> {
-    let data = include_str!("../../italian-cities.csv");
+    let data = include_str!(`"../../italian-cities.csv");
     let mut reader = csv::Reader::from_reader(data.as_bytes());
 
     let mut cities = ItalianCities { data: vec![] };

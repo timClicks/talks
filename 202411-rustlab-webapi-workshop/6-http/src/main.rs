@@ -1,6 +1,6 @@
+// Adds env_logger (cargo add env_logger)
 // Adds Actix Web (cargo add actix_web)
 // Adds serde (cargo add serde --features=derive)
-// Adds env_logger
 use actix_web::middleware::Logger;
 use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
 use clap::Parser;
