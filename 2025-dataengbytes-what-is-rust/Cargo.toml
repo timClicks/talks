@@ -1,0 +1,19 @@
+[package]
+name = "rust-analysis"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.40"
+clap = { version = "4.5.35", features = ["derive"] }
+rand = "0.9.0"
+polars = { version = "0.39.0", features = ["lazy", "csv", "temporal", "strings"] }
+anyhow = "1.0.82"
+
+[[bin]]
+name = "data-generator"
+path = "scripts/data-generator.rs"
+
+[[bin]]
+name = "cohort-analysis"
+path = "src/cohort_analysis.rs"

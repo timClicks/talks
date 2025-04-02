@@ -1,0 +1,16 @@
+[project]
+name = "cohort-analysis"
+version = "0.1.0"
+description = "Customer cohort analysis"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "polars>=0.20.0",
+]
+
+[project.scripts]
+cohort-analysis = "cohort_analysis:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
